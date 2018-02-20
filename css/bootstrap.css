@@ -479,9 +479,11 @@ h6, .h6 {
 }
 
 .display-3 {
-  font-size: 71px;
+  font-size: 72px;
   font-weight: bold;
   line-height: 1.2;
+  color: #ffffff;
+  text-shadow: 2px 3px #000;
 }
 
 .display-4 {
@@ -4505,7 +4507,17 @@ tbody.collapse.show {
   margin-bottom: 2rem;
   background-color: #e9ecef;
   border-radius: 0.3rem;
+  background-image: url(../img/programming.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+.subtitulo {
+  color: #ffffff;
+  font-size: 20px;
+  text-shadow: 1px 1px #000;
+}
+
 
 @media (min-width: 576px) {
   .jumbotron {
