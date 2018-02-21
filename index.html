@@ -14,9 +14,23 @@
 
     <!-- Custom styles for this template -->
     <link href="css/jumbotron.css" rel="stylesheet">
+
+
+    <!-- OuiBounce CSS e fonte -->
+    <link rel="stylesheet" href="css/ouibounce.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Load jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <!-- Add OuiBounce JS -->
+    <script src="js/ouibounce.js"></script>
   </head>
 
   <body>
+
+
+
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <a class="navbar-brand" href="#">Growth Hack</a>
@@ -30,7 +44,7 @@
             <a class="nav-link" href="https://www.growthhack.com.br/sobre">Sobre</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://www.growthhack.com.br/curso-growth-hacking">Curso de Growth Hacking</a>
+            <a class="nav-link" href="https://www.growthhack.com.br/curso-growth-hacking">Cursos de Growth Hacking</a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#">Disabled</a>
@@ -50,6 +64,10 @@
         </form>
       </div>
     </nav>
+
+
+
+
 
     <main role="main">
 
@@ -81,6 +99,9 @@
         </div>
       </div>
 
+
+
+
       <div class="container">
         <!-- Example row of columns -->
         <div class="row">
@@ -92,7 +113,7 @@
           <div class="col-md-4">
             <h2>Monitorias individuais</h2>
             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <p><a class="botao-airbnb" href="#" role="button">View details &raquo;</a></p>
           </div>
           <div class="col-md-4">
             <h2>Templates e docs</h2>
@@ -111,6 +132,59 @@
       <p>&copy; Company 2017</p>
     </footer>
 
+    <!-- Ouibounce popup -->
+    <div id="ouibounce-popup">
+     <div class="underlay"></div>
+     <div class="popup">
+       <div class="popup-title">
+         <h3>This is a Ouibounce popup</h3>
+       </div>
+
+       <div class="popup-body">
+         <p>Thanks for stopping by!</p>
+         <br>
+         <p>You can style your Ouibounce popup however you see fit. You can also include big buttons, an email capture or just plain text. The sky's the limit!</p>
+         <br>
+         <p>Close this popup by clicking "No Thanks" below or clicking anywhere outside of the popup.</p>
+
+         <form>
+           <input type="text" placeholder="you@email.com">
+           <input type="submit" value="learn more &raquo;">
+           <p class="form-notice">*this is a fake form</p>
+         </form>
+       </div>
+
+       <div class="popup-footer">
+         <p>no thanks</p>
+       </div>
+     </div>
+    </div>
+    </div>
+   <!-- Example page JS        -->
+   <!-- Used to fire the popup -->
+   <script>
+
+     // if you want to use the 'fire' or 'disable' fn,
+     // you need to save OuiBounce to an object
+     var _ouibounce = ouibounce(document.getElementById('ouibounce-popup'), {
+       aggressive: true,
+       timer: 0,
+       callback: function() { console.log('ouibounce fired!'); }
+     });
+
+     $('body').on('click', function() {
+       $('#ouibounce-popup').hide();
+     });
+
+     $('#ouibounce-popup .popup-footer').on('click', function() {
+       $('#ouibounce-popup').hide();
+     });
+
+     $('#ouibounce-popup .popup').on('click', function(e) {
+       e.stopPropagation();
+     });
+   </script>
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -118,5 +192,8 @@
     <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="../../../../assets/js/vendor/popper.min.js"></script>
     <script src="../../../../dist/js/bootstrap.min.js"></script>
+
+
+
   </body>
 </html>

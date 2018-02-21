@@ -2349,6 +2349,32 @@ fieldset[disabled] a.btn {
   border-color: #6c757d;
 }
 
+.botao-airbnb {
+    cursor: pointer !important;
+    -webkit-transition: background 0.3s, border-color 0.3s !important;
+    -moz-transition: background 0.3s, border-color 0.3s !important;
+    transition: background 0.3s, border-color 0.3s !important;
+    position: relative !important;
+    display: inline-block !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    border-radius: 4px !important;
+    width: auto !important;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    font-size: 19px !important;
+    line-height: 22px !important;
+    letter-spacing: undefined !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    border: 2px solid transparent !important;
+    padding-right: 24px !important;
+    padding-left: 24px !important;
+    min-width: 77.66563145999496px !important;
+    background: #008489 !important;
+  }
+
 .btn-secondary:focus, .btn-secondary.focus {
   box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
 }
@@ -2807,6 +2833,7 @@ fieldset[disabled] a.btn {
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem;
+  margin-top: 10px;
 }
 
 .btn-sm, .btn-group-sm > .btn {
