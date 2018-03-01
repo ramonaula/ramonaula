@@ -55,7 +55,6 @@
 }
 #ouibounce-popup p {
   color: #344a5f;
-  line-height: 1.3em;
 }
 #ouibounce-popup form {
   text-align: center;
@@ -76,7 +75,7 @@
   font-size: 1.1em;
   border-radius: 4px;
   color: #fff;
-  background-color: #000;
+  background-color: #4ab471;
   border: none;
   cursor: pointer;
   -webkit-font-smoothing: antialiased;
