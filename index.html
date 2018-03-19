@@ -127,47 +127,46 @@
           <div class="col-md-4">
             <h2>Aulas online</h2>
             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" onClick="botao_aulas()" href="/aulas_online.html" role="button">View details &raquo;</a></p>
+            <p><a class="btn btn-secondary" onClick="botao_aula()" href="/aulas-online.html" role="button">View details &raquo;</a></p>
 
-            <script type="text/text/javascript">
-              function botao_aulas() {
+            <script type="text/javascript">
+              function botao_aula() {
                 mixpanel.track('Clique Botao', {
-                  'Botao': 'Aulas Online',
+                  'Tipo': 'Aulas online',
                   'url': window.location.pathname
                 });
               }
             </script>
+
 
           </div>
           <div class="col-md-4">
             <h2>Monitorias individuais</h2>
             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="botao-airbnb" onClick="botao_monitorias()" href="/monitorias_individuais.html" role="button">View details &raquo;</a></p>
+            <p><a class="botao-airbnb" onClick="botao_monitorias()" href="/monitorias-individuais.html" role="button">View details &raquo;</a></p>
 
             <script type="text/javascript">
-              function botao_monitorias() {
-                mixpanel.track('Clique Botao', {
-                  'Botao': 'Monitorias Individuais',
-                  'url': window.location.pathname
-                });
-              }
+            function botao_monitorias() {
+              mixpanel.track('Clique Botao', {
+                'Tipo': 'Monitorias Individuais',
+                'url': window.location.pathname
+              });
+            }
             </script>
           </div>
-
           <div class="col-md-4">
             <h2>Templates e docs</h2>
             <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
             <p><a class="btn btn-secondary" onClick="botao_templates()" href="/templates.html" role="button">View details &raquo;</a></p>
 
             <script type="text/javascript">
-              function botao_templates() {
-                mixpanel.track('Clique Botao', {
-                  'Botao': 'Templates e Docs',
-                  'url': window.location.pathname
-                });
-              }
+            function botao_templates() {
+              mixpanel.track('Clique Botao', {
+                'Tipo': 'Templates e docs',
+                'url': window.location.pathname
+              });
+            }
             </script>
-
           </div>
         </div>
 
